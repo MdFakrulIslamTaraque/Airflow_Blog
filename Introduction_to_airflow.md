@@ -1,7 +1,7 @@
 # Index
 + [What is Airflow](#airflow)
 + [Why Airflow](#why-airflow)
-+ [Usecases](#usecases)
++ [Use-cases](#usecases)
 + [Be aware of Airflow](#be-aware-of-airflow)
 
 
@@ -24,8 +24,17 @@ After its release in 2015, it was a huge blast in the data community, and it's s
 
 With these features, Airflow has become the central nervous system of today's modern data stack. To get some ideas about its popularity, Airflow has 30k+ people on its slack community, over 35k+ stars on the github repository, and over 9m+ monthly downloads. Companies like Walmart, Fanduel, Adobe, and the and the Texas Rangers use airflow on a daily basis. 
 
-# Usecases
+# Use cases
 There are four (04) main use cases, where data is business critial, can be managed with airflow.
+
+```mermaid
+flowchart TB
+
+Airflow_usecase --> Data_powered_application
+Airflow_usecase --> Critical_operational_processes
+Airflow_usecase --> Analytics_&_Reporting
+Airflow_usecase --> MLOPs_&_AI
+```
 
 - **Data Powered Application**: In such applications, they expose dynamic data as key product features to function and provide value, e.g., fitness applications to provide health scores, activity goals, etc. 
 
@@ -39,8 +48,16 @@ There are four (04) main use cases, where data is business critial, can be manag
 In most of these use cases, latest data comes from different sources, like a smart watch or user-provided data from an app, must be gathered in a unified storage, transfered to specified format to be fit in other models or system and build reports and analytics. Here, airflow plays a vital role in creating a pipeline to ingest, transform, and backup data on a daily basis.
 
 # Be aware of Airflow
-There are three(03) main use cases while using airflow, when we may face some complications.
+There are three (03) main use cases while using airflow, when we may face some complications.
 
+```mermaid
+flowchart TB
+
+Airflow_complication--> streaming_processing
+Airflow_complication--> Scalability_with_inadequate_resource
+Airflow_complication--> Data_processing_with_inadequate_resource
+
+```
 - **Streaming**: Airflow is designed for batch processing, not for streaming processing. Because until a run completes the next run can't be started in Airflow. That's why, it lacks the capability of real-time processing and immediate response to real-time data events. However, an alternative solution to this problem is using  ***airflow with Kafka***. Kafka is a tool to ingest and process data in real-time. Ingesting real-time data in the data warehouse using Kafka and then using the event data airflow can start workflows based on real-time data.
 
 - **Scalibility**: On the availability of proper infrastructure, Airflow is scalable. Snapchat, Shopify, and Pinterest handle more than millions of monthly data using adequate infrastructure. But for small teams, with inadequate resources maintaining a complex infrastructure with airflow can challenging, and also some issues may arise.
