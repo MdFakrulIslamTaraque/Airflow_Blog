@@ -6,7 +6,7 @@
 
 
 # airflow
-Airflow is an open-source orchestration tool and platform for **authoring**, **scheduling** and **monitoring** workflows programmatically. On June 2, 2015, while Maxime Beauchemin was working for Airbnb, he released a [blog](#https://medium.com/airbnb-engineering/airflow-a-workflow-management-platform-46318b977fd8) introducing Apache [airflow](#https://github.com/apache/airflow) as an open source workflow management platform.
+Airflow is an open-source orchestration tool and platform for **authoring**, **scheduling** and **monitoring** workflows programmatically. On June 2, 2015, while Maxime Beauchemin was working for Airbnb, he released a [blog](https://medium.com/airbnb-engineering/airflow-a-workflow-management-platform-46318b977fd8) introducing Apache [airflow](https://github.com/apache/airflow) as an open source workflow management platform.
 
 
 # Why Airflow 
@@ -14,7 +14,7 @@ After its release in 2015, it was a huge blast in the data community, and it's s
 
 - **Pipeline as Python**:  Data pipelines are created using Python, which is the de facto programming language for data.
 
-- **Community Driven**: Open-source project backed by a large developer community. The github [repository](#https://github.com/apache/airflow) of Airflow has almost 3,000 contributors, and almost every month, new features are released.
+- **Community Driven**: Open-source project backed by a large developer community. The github [repository](https://github.com/apache/airflow) of Airflow has almost 3,000 contributors, and almost every month, new features are released.
 
 - **Observability**: Its centralized UI provides awesome features to monitor and manage workflows easily. Also, we can set alerts to monitor critical issues. 
 
